@@ -16,14 +16,15 @@
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        
+
 html,body{
-display: grid;
-height: 100%;
-width: 100%;
-font-family: "Poppins", sans-serif;
-place-items: center;
-background: black;
+  background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+background: url({{ asset('static/img/tecno.jpg') }});
+
+
 }
 .wrapper .icon{
     position: relative;
@@ -62,18 +63,23 @@ background: black;
           font-size: 3.5rem;
         }
       }
+
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body class="d-flex h-100 text-center text-white bg-dark" style=" background-position:center;
+background-size:cover;
+background-attachment:fixed;">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0" style="margin-top: 15px;">Black box</h3>
+      <h6 class="float-md-start mb-0" style="margin-top: 45px;margin-left: -120px;">Tú lo sueñas, nosotros lo programamos</h6>
+      
       <nav class="nav nav-masthead justify-content-center float-md-end">
       <ul class="wrapper">
         <li class="icon facebook">
@@ -88,19 +94,40 @@ background: black;
         <li class="icon github">
             <span class="tooltip">Github</span>
             <span><i class="fab fa-github"></i></span></li>
-       
     </ul>
       <!--  <a class="nav-link" href="#">Trabajos realizados</a>-->
       </nav>
     </div>
   </header>
 
-  <main class="px-3">
-    <h1>SERVICIOS DE DESARROLLO DE SOFTWARE</h1>
-    <p class="lead">Desarrollamos software y aplicaciones para toda clase de publicos y proyectos para startups, pequeñas , medianas  y grandes empresas.</p>
+  <main class="px-3 " >
+  <div class="card mb-3 position-absolute top-50 start-50 translate-middle bg-dark " style="max-width: 540px;">
+  <div class="row g-0 ">
+    <div class="col-md-4">
+      <img src="{{ asset('static/img/black.jpg') }}" class="img-fluid rounded-start" style="height:auto;" alt="...">
+      <p class="lead text-white">Contactanos en nuestro correo como blackboxtectux@gmail.com </p>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+     
+        <h3 class="text-white">SERVICIOS DE DESARROLLO DE SOFTWARE</h3>
+        <p class="lead text-white">Desarrollamos software y aplicaciones para toda clase de publicos y proyectos para startups, pequeñas , medianas  y grandes empresas.</p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white text-dark bg-white">Trabajos realizados</a>
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-black bg-black text-white bg-black">Trabajos realizados</a>
     </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <h1></h1>
+        
+      
+   
+    
+   
+
+   
   </main>
 
   <footer class="mt-auto text-white-50">

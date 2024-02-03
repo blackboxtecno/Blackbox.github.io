@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
+   
+        background-position:center center;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-attachment:fixed;
+      
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
 }
 
-
+body{
+    background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+}
 
 
 

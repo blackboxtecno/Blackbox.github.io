@@ -18,11 +18,8 @@
     <style>
 
 html,body{
-  background-position:center;
-background-repeat:no-repeat;
-background-size:cover;
-background-attachment:fixed;
-background: url({{ asset('static/img/tecno.jpg') }});
+
+background: url({{ asset('static/img/fondo.jpg') }});
 
 
 }
@@ -63,22 +60,37 @@ background: url({{ asset('static/img/tecno.jpg') }});
           font-size: 3.5rem;
         }
       }
-
+      *{
+        padding:0;
+        margin: 0;
+      }
+      .p-3
+{
+  padding: 0rem !important;
+}
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark" style=" background-position:center;
+  <body class="d-flex h-100 text-center text-white bg-dark" style="backdrop-filter:blur(5px); background-position:bottom;
+background-repeat:no-repeat;
 background-size:cover;
 background-attachment:fixed;">
     
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+   
+    
+ 
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
   <header class="mb-auto">
+    
     <div>
+    <nav class="navbar bg-dark border-bottom border-body ma-0" data-bs-theme="dark">
+    <!--  <img src="{{ asset('static/img/cubo.png') }}" class="img-fluid rounded-start" style="height:auto;" alt="..."-->
       <h3 class="float-md-start mb-0" style="margin-top: 15px;">Black box</h3>
-      <h6 class="float-md-start mb-0" style="margin-top: 45px;margin-left: -120px;">Tú lo sueñas, nosotros lo programamos</h6>
+      <h6 class="float-md-start mb-0" style="margin-top: 55px;margin-left: -1420px;">Tú lo sueñas, nosotros lo programamos</h6>
       
       <nav class="nav nav-masthead justify-content-center float-md-end">
       <ul class="wrapper">
@@ -97,7 +109,9 @@ background-attachment:fixed;">
     </ul>
       <!--  <a class="nav-link" href="#">Trabajos realizados</a>-->
       </nav>
+      
     </div>
+    </nav>
   </header>
 
   <main class="px-3 " >
